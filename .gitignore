@@ -1,0 +1,8 @@
+# virtualenv files
+venv/
+
+# IDE files
+.idea/
+
+# Compiled files
+*.pyc
