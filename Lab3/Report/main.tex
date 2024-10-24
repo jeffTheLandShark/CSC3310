@@ -89,10 +89,11 @@ return wn % 2 == 1
 
 \section{Algorithm Justification}
 % 3. Provide an explanation and justification for why your algorithm is correct (1-3 paragraphs)
-This algorithm can be proven using 
+This algorithm is the same one as is used in the \textit{ray-casting method}. The ray-casting parity argument, which the ray-casting method solves, says that a ray from the right of a given point extended to infinity will cross an even number of lines of a polygon if it is outside, and an odd number if it is outside every time. This works because every time the ray crosses a polygon edge, it switches between being "inside" and "outside."
 
 \section{Time Analysis}
 % 4. Perform an analysis of the worst-case run time using asymptotic notation.
+This algorithm exact analysis runtime is $T(n) = 105n + 6$, with a time complexity of O(n), where n represents the number of vectors which represent the polygon's edges.
 
 \section{Test Cases}
 % 5. A table of your test cases, the answers you expect, and the answers returned by running your implementation of the algorithm.
