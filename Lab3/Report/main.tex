@@ -99,8 +99,27 @@ This algorithm exact analysis runtime is $T(n) = 105n + 6$, with a time complexi
 % 5. A table of your test cases, the answers you expect, and the answers returned by running your implementation of the algorithm.
 
 
+
 \section{Benchmarking}
 % 6. A table and graph from benchmarking your implementation on problem instances of different sizes. The benchmarks should support your theoretically derived run time.
+\begin{table}[H]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+\textbf{Polygon Size} & \textbf{Run Time (seconds)} \\ \hline
+3    & \(3.6 \times 10^{-5}\) \\ \hline
+5    & \(2.2 \times 10^{-5}\) \\ \hline
+10   & \(3.8 \times 10^{-5}\) \\ \hline
+50   & \(1.63 \times 10^{-4}\) \\ \hline
+100  & \(3.20 \times 10^{-4}\) \\ \hline
+500  & \(2.18 \times 10^{-3}\) \\ \hline
+1000 & \(3.90 \times 10^{-3}\) \\ \hline
+2000 & \(7.876 \times 10^{-3}\) \\ \hline
+\end{tabular}
+\caption{Polygon Size vs. Run Time}
+\label{tab:runtime}
+\end{table}
+
 
 
 \end{multicols*}
