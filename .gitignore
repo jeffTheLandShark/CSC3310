@@ -6,3 +6,12 @@ venv/
 
 # Compiled files
 *.pyc
+
+# tex compilation files
+*.aux
+*.log
+*.out
+*.toc
+*.fdb_latexmk
+*.fls
+*.synctex.gz
