@@ -52,6 +52,23 @@
 
 \section{Test Cases}
 % A table of your test cases, the answers you expect, and the answers returned by running your implementation of the algorithm
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+    Test & Description & Result \\
+    \hline
+    Test 1 & Test 10 elements to ensure that the kth smallest element corresponds to the [k-1]th index of a sorted list & Pass \\
+    Test 2 & Test to ensure that lots of duplicate elements are handled correctly & Pass \\
+    Test 3 & Test wildly small and large values & Pass \\
+    Test 4 & Shuffle list and test, ensuring that there isn't a dependence on ordering & Pass \\
+    Test 5 & 2 element list & Pass \\
+    Test 6 & 10000 element list & Pass \\
+    \hline
+    \end{tabular}
+    \caption{Test Results}
+    \label{table:test_results}
+\end{table}
 
 \section{Recurrance Relation}
 % Derive a recurrence relation describing the run time in terms of the number of points n. (Hint: assume that the random pivot divides the elements in half each time.
