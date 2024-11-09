@@ -41,13 +41,38 @@
 
 \section{Approach}
 % A paragraph describing the approach that you used to solve the problem. Provide at least 2 illustrations that explain the approach
+The quickselect algorithm utilizes divide-and-conquer to find the $k^{th}$ smallest element without sourting the entire array. The key idea is to repeatedly partition the array using a randomly chosen pivot. During each partition, elements smaller than the pivot get moved to the left and greater elements are moved to the right. If the pivot's index is exactly $k - 1$, we have found the $k^th$ smallest element. Otherwise, we will continue searching recursively in the relevant subarray, reducing the problem size at each step. 
+\begin{figure}
+     \centering
+     \includegraphics[width=1\linewidth]{Quickselect.png}
+\end{figure} 
+
+
 
 \section{Pseudocode}
 % High-level pseudocode for an algorithm that uses that rule to solve the computational problem for any input
+\begin{verbatim}
+partition(lst, low, high):
+    SWAP(lst[RANDOM(low, high)], lst[high])
+    pivot = lst[high], i = low
+    FOR j FROM low TO high - 1:
+        IF lst[j] < pivot: SWAP(lst[i], lst[j]), i = i + 1
+    SWAP(lst[i], lst[high])
+    RETURN i
+
+select(lst, low, high, k):
+    IF low = high: RETURN lst[low]
+    pivot_index = partition(lst, low, high)
+    IF k = pivot_index: RETURN lst[k]
+    RETURN select(lst, low, pivot_index - 1, k) IF k < pivot_index ELSE select(lst, pivot_index + 1, high, k)
+
+quickselect(lst, k):
+    RETURN select(lst, 0, LENGTH(lst) - 1, k - 1)
+\end{verbatim}
 
 \section{Algorithm Justification}
 % 3. Provide an explanation and justification for why your algorithm is correct (1-3 paragraphs)
-
+The quickselect algorithm is able to solve the k-smallest problem using divide-and-conquer similar to how Quicksort operates. It is able to narrow the search space by partitioning the array around a randomly chosen pivot element. Each partition step ensures the pivot element is in a correct sorted position, with all smallest elements to the left and larger elements to the right. If the pivot's position is equal to $k - 1$, it is the $k^{th}$ smallest element. Otherwise, it will recursively ssearc the subarray to the left or right depending on the position of k comparatively to the array sizes.
 
 
 \section{Test Cases}
@@ -70,9 +95,12 @@
     \label{table:test_results}
 \end{table}
 
-\section{Recurrance Relation}
+\section{Recurrence Relation}
 % Derive a recurrence relation describing the run time in terms of the number of points n. (Hint: assume that the random pivot divides the elements in half each time.
 % Solve the recurrence relation to get a run time in terms of n in asymptotic notation
+The recurrence relation is:
+$T(n) = T(\frac{n}{2})+O(n)$
+Using the master theorem, we get that this is a Case 3 recurrence relation, which tells us that the average case time complexity of this algorithm is $T(n) = O(n)$
 
 \section{Benchmarking}
 % Benchmark your implementation versus an approach that sorts the numbers and picks the element at index k – 1. You should include a table and graph from benchmarking different lists with different sizes of numbers. The benchmarks should support your theoretically-derived run time and provide evidence that the run time of your algorithm grows more slowly than the sorting approach.
