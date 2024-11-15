@@ -1,0 +1,344 @@
+Lab 4 Benchmarking:
+
+Running quickselect with size 100 - case best
+  k=20 took 0.000038 seconds
+  k=40 took 0.000030 seconds
+  k=60 took 0.000035 seconds
+  k=80 took 0.000028 seconds
+Running quickselect with size 500 - case best
+  k=20 took 0.000132 seconds
+  k=40 took 0.000148 seconds
+  k=60 took 0.000162 seconds
+  k=80 took 0.000141 seconds
+Running quickselect with size 1000 - case best
+  k=20 took 0.000203 seconds
+  k=40 took 0.000316 seconds
+  k=60 took 0.000306 seconds
+  k=80 took 0.000250 seconds
+Running quickselect with size 5000 - case best
+  k=20 took 0.001191 seconds
+  k=40 took 0.001687 seconds
+  k=60 took 0.001558 seconds
+  k=80 took 0.001275 seconds
+Running quickselect with size 10000 - case best
+  k=20 took 0.002639 seconds
+  k=40 took 0.002453 seconds
+  k=60 took 0.002842 seconds
+  k=80 took 0.002866 seconds
+Running quickselect with size 25000 - case best
+  k=20 took 0.007367 seconds
+  k=40 took 0.006111 seconds
+  k=60 took 0.009384 seconds
+  k=80 took 0.006406 seconds
+Running quickselect with size 50000 - case best
+  k=20 took 0.014232 seconds
+  k=40 took 0.015484 seconds
+  k=60 took 0.013937 seconds
+  k=80 took 0.012061 seconds
+Running quickselect with size 75000 - case best
+  k=20 took 0.019279 seconds
+  k=40 took 0.019346 seconds
+  k=60 took 0.024466 seconds
+  k=80 took 0.020614 seconds
+Running quickselect with size 100000 - case best
+  k=20 took 0.029352 seconds
+  k=40 took 0.029288 seconds
+  k=60 took 0.023329 seconds
+  k=80 took 0.024474 seconds
+Running quickselect with size 250000 - case best
+  k=20 took 0.061262 seconds
+  k=40 took 0.068862 seconds
+  k=60 took 0.074225 seconds
+  k=80 took 0.075005 seconds
+Running quickselect with size 500000 - case best
+  k=20 took 0.152018 seconds
+  k=40 took 0.180715 seconds
+  k=60 took 0.174770 seconds
+  k=80 took 0.162950 seconds
+Running quickselect with size 100 - case worst
+  k=20 took 0.000034 seconds
+  k=40 took 0.000033 seconds
+  k=60 took 0.000032 seconds
+  k=80 took 0.000034 seconds
+Running quickselect with size 500 - case worst
+  k=20 took 0.000147 seconds
+  k=40 took 0.000132 seconds
+  k=60 took 0.000156 seconds
+  k=80 took 0.000130 seconds
+Running quickselect with size 1000 - case worst
+  k=20 took 0.000282 seconds
+  k=40 took 0.000324 seconds
+  k=60 took 0.000348 seconds
+  k=80 took 0.000271 seconds
+Running quickselect with size 5000 - case worst
+  k=20 took 0.001359 seconds
+  k=40 took 0.001293 seconds
+  k=60 took 0.001547 seconds
+  k=80 took 0.001052 seconds
+Running quickselect with size 10000 - case worst
+  k=20 took 0.002232 seconds
+  k=40 took 0.003206 seconds
+  k=60 took 0.002636 seconds
+  k=80 took 0.002462 seconds
+Running quickselect with size 25000 - case worst
+  k=20 took 0.006560 seconds
+  k=40 took 0.006994 seconds
+  k=60 took 0.007238 seconds
+  k=80 took 0.007385 seconds
+Running quickselect with size 50000 - case worst
+  k=20 took 0.013401 seconds
+  k=40 took 0.014141 seconds
+  k=60 took 0.012113 seconds
+  k=80 took 0.013403 seconds
+Running quickselect with size 75000 - case worst
+  k=20 took 0.018721 seconds
+  k=40 took 0.023584 seconds
+  k=60 took 0.020194 seconds
+  k=80 took 0.019201 seconds
+Running quickselect with size 100000 - case worst
+  k=20 took 0.023973 seconds
+  k=40 took 0.025632 seconds
+  k=60 took 0.029633 seconds
+  k=80 took 0.023755 seconds
+Running quickselect with size 250000 - case worst
+  k=20 took 0.072192 seconds
+  k=40 took 0.067563 seconds
+  k=60 took 0.071013 seconds
+  k=80 took 0.061139 seconds
+Running quickselect with size 500000 - case worst
+  k=20 took 0.128942 seconds
+  k=40 took 0.142476 seconds
+  k=60 took 0.140825 seconds
+  k=80 took 0.108938 seconds
+Running quickselect with size 100 - case random
+  k=20 took 0.000029 seconds
+  k=40 took 0.000032 seconds
+  k=60 took 0.000040 seconds
+  k=80 took 0.000026 seconds
+Running quickselect with size 500 - case random
+  k=20 took 0.000129 seconds
+  k=40 took 0.000160 seconds
+  k=60 took 0.000146 seconds
+  k=80 took 0.000124 seconds
+Running quickselect with size 1000 - case random
+  k=20 took 0.000250 seconds
+  k=40 took 0.000341 seconds
+  k=60 took 0.000324 seconds
+  k=80 took 0.000268 seconds
+Running quickselect with size 5000 - case random
+  k=20 took 0.001323 seconds
+  k=40 took 0.001611 seconds
+  k=60 took 0.001542 seconds
+  k=80 took 0.001318 seconds
+Running quickselect with size 10000 - case random
+  k=20 took 0.002614 seconds
+  k=40 took 0.003383 seconds
+  k=60 took 0.003153 seconds
+  k=80 took 0.002465 seconds
+Running quickselect with size 25000 - case random
+  k=20 took 0.005865 seconds
+  k=40 took 0.008524 seconds
+  k=60 took 0.007443 seconds
+  k=80 took 0.007257 seconds
+Running quickselect with size 50000 - case random
+  k=20 took 0.017479 seconds
+  k=40 took 0.016438 seconds
+  k=60 took 0.014199 seconds
+  k=80 took 0.016499 seconds
+Running quickselect with size 75000 - case random
+  k=20 took 0.023087 seconds
+  k=40 took 0.020105 seconds
+  k=60 took 0.024233 seconds
+  k=80 took 0.022300 seconds
+Running quickselect with size 100000 - case random
+  k=20 took 0.029510 seconds
+  k=40 took 0.036148 seconds
+  k=60 took 0.035533 seconds
+  k=80 took 0.025402 seconds
+Running quickselect with size 250000 - case random
+  k=20 took 0.067224 seconds
+  k=40 took 0.088536 seconds
+  k=60 took 0.081852 seconds
+  k=80 took 0.077515 seconds
+Running quickselect with size 500000 - case random
+  k=20 took 0.214525 seconds
+  k=40 took 0.210812 seconds
+  k=60 took 0.190270 seconds
+  k=80 took 0.167333 seconds
+Running sortselect with size 100 - case best
+  k=20 took 0.000001 seconds
+  k=40 took 0.000001 seconds
+  k=60 took 0.000001 seconds
+  k=80 took 0.000001 seconds
+Running sortselect with size 500 - case best
+  k=20 took 0.000003 seconds
+  k=40 took 0.000003 seconds
+  k=60 took 0.000003 seconds
+  k=80 took 0.000003 seconds
+Running sortselect with size 1000 - case best
+  k=20 took 0.000008 seconds
+  k=40 took 0.000007 seconds
+  k=60 took 0.000007 seconds
+  k=80 took 0.000007 seconds
+Running sortselect with size 5000 - case best
+  k=20 took 0.000032 seconds
+  k=40 took 0.000032 seconds
+  k=60 took 0.000032 seconds
+  k=80 took 0.000032 seconds
+Running sortselect with size 10000 - case best
+  k=20 took 0.000063 seconds
+  k=40 took 0.000063 seconds
+  k=60 took 0.000066 seconds
+  k=80 took 0.000063 seconds
+Running sortselect with size 25000 - case best
+  k=20 took 0.000169 seconds
+  k=40 took 0.000168 seconds
+  k=60 took 0.000168 seconds
+  k=80 took 0.000175 seconds
+Running sortselect with size 50000 - case best
+  k=20 took 0.000375 seconds
+  k=40 took 0.000381 seconds
+  k=60 took 0.000375 seconds
+  k=80 took 0.000375 seconds
+Running sortselect with size 75000 - case best
+  k=20 took 0.000576 seconds
+  k=40 took 0.000576 seconds
+  k=60 took 0.000576 seconds
+  k=80 took 0.000573 seconds
+Running sortselect with size 100000 - case best
+  k=20 took 0.000780 seconds
+  k=40 took 0.000771 seconds
+  k=60 took 0.000783 seconds
+  k=80 took 0.000771 seconds
+Running sortselect with size 250000 - case best
+  k=20 took 0.002019 seconds
+  k=40 took 0.002007 seconds
+  k=60 took 0.002000 seconds
+  k=80 took 0.002011 seconds
+Running sortselect with size 500000 - case best
+  k=20 took 0.005060 seconds
+  k=40 took 0.005084 seconds
+  k=60 took 0.005069 seconds
+  k=80 took 0.005089 seconds
+Running sortselect with size 100 - case worst
+  k=20 took 0.000001 seconds
+  k=40 took 0.000001 seconds
+  k=60 took 0.000001 seconds
+  k=80 took 0.000001 seconds
+Running sortselect with size 500 - case worst
+  k=20 took 0.000004 seconds
+  k=40 took 0.000004 seconds
+  k=60 took 0.000004 seconds
+  k=80 took 0.000004 seconds
+Running sortselect with size 1000 - case worst
+  k=20 took 0.000007 seconds
+  k=40 took 0.000007 seconds
+  k=60 took 0.000007 seconds
+  k=80 took 0.000007 seconds
+Running sortselect with size 5000 - case worst
+  k=20 took 0.000035 seconds
+  k=40 took 0.000034 seconds
+  k=60 took 0.000034 seconds
+  k=80 took 0.000034 seconds
+Running sortselect with size 10000 - case worst
+  k=20 took 0.000069 seconds
+  k=40 took 0.000068 seconds
+  k=60 took 0.000068 seconds
+  k=80 took 0.000068 seconds
+Running sortselect with size 25000 - case worst
+  k=20 took 0.000188 seconds
+  k=40 took 0.000190 seconds
+  k=60 took 0.000194 seconds
+  k=80 took 0.000194 seconds
+Running sortselect with size 50000 - case worst
+  k=20 took 0.000417 seconds
+  k=40 took 0.000416 seconds
+  k=60 took 0.000416 seconds
+  k=80 took 0.000417 seconds
+Running sortselect with size 75000 - case worst
+  k=20 took 0.000635 seconds
+  k=40 took 0.000645 seconds
+  k=60 took 0.000658 seconds
+  k=80 took 0.000633 seconds
+Running sortselect with size 100000 - case worst
+  k=20 took 0.000847 seconds
+  k=40 took 0.000903 seconds
+  k=60 took 0.000857 seconds
+  k=80 took 0.000863 seconds
+Running sortselect with size 250000 - case worst
+  k=20 took 0.002175 seconds
+  k=40 took 0.002177 seconds
+  k=60 took 0.002163 seconds
+  k=80 took 0.002180 seconds
+Running sortselect with size 500000 - case worst
+  k=20 took 0.005572 seconds
+  k=40 took 0.005484 seconds
+  k=60 took 0.005489 seconds
+  k=80 took 0.005546 seconds
+Running sortselect with size 100 - case random
+  k=20 took 0.000003 seconds
+  k=40 took 0.000003 seconds
+  k=60 took 0.000003 seconds
+  k=80 took 0.000003 seconds
+Running sortselect with size 500 - case random
+  k=20 took 0.000021 seconds
+  k=40 took 0.000021 seconds
+  k=60 took 0.000022 seconds
+  k=80 took 0.000021 seconds
+Running sortselect with size 1000 - case random
+  k=20 took 0.000071 seconds
+  k=40 took 0.000071 seconds
+  k=60 took 0.000071 seconds
+  k=80 took 0.000075 seconds
+Running sortselect with size 5000 - case random
+  k=20 took 0.000486 seconds
+  k=40 took 0.000490 seconds
+  k=60 took 0.000488 seconds
+  k=80 took 0.000493 seconds
+Running sortselect with size 10000 - case random
+  k=20 took 0.001064 seconds
+  k=40 took 0.001064 seconds
+  k=60 took 0.001072 seconds
+  k=80 took 0.001129 seconds
+Running sortselect with size 25000 - case random
+  k=20 took 0.003097 seconds
+  k=40 took 0.003067 seconds
+  k=60 took 0.003124 seconds
+  k=80 took 0.003077 seconds
+Running sortselect with size 50000 - case random
+  k=20 took 0.007063 seconds
+  k=40 took 0.007143 seconds
+  k=60 took 0.007068 seconds
+  k=80 took 0.007096 seconds
+Running sortselect with size 75000 - case random
+  k=20 took 0.011173 seconds
+  k=40 took 0.011199 seconds
+  k=60 took 0.011160 seconds
+  k=80 took 0.011140 seconds
+Running sortselect with size 100000 - case random
+  k=20 took 0.015705 seconds
+  k=40 took 0.015602 seconds
+  k=60 took 0.015578 seconds
+  k=80 took 0.015556 seconds
+Running sortselect with size 250000 - case random
+  k=20 took 0.045033 seconds
+  k=40 took 0.044985 seconds
+  k=60 took 0.044683 seconds
+  k=80 took 0.045159 seconds
+Running sortselect with size 500000 - case random
+  k=20 took 0.108036 seconds
+  k=40 took 0.107463 seconds
+  k=60 took 0.107798 seconds
+  k=80 took 0.107649 seconds
+
+Complexity Analysis:
+
+Algorithm: quickselect
+  Case: best: Sub-linear (e.g., log n) (m=0.99)
+  Case: worst: Sub-linear (e.g., log n) (m=0.99)
+  Case: random: Between linear and quadratic (e.g., n log n) (m=1.01)
+
+Algorithm: sortselect
+  Case: best: Between linear and quadratic (e.g., n log n) (m=1.02)
+  Case: worst: Between linear and quadratic (e.g., n log n) (m=1.02)
+  Case: random: Between linear and quadratic (e.g., n log n) (m=1.23)
