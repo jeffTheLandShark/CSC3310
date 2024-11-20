@@ -1,0 +1,72 @@
+\documentclass{labReport}
+\urlstyle{same}
+
+\let\verbatim\undefined 
+\let\verbatimend\undefined 
+\lstnewenvironment{verbatim}{\lstset{breaklines,basicstyle=\ttfamily}}{}
+\usepackage{lipsum}
+
+\title{Lab 4: Divide and Conquer Algorithms}
+\author{Adam Haile, Aiden Miller, Leigh Goetsch}
+\prof{Dr. Berisha}
+\className{Algorithms \& Adv. Data Struct.}
+\classCode{CSC 3310}
+\semester{Fall 2024}
+\submissionDate{11/08/2024}
+\labWeek{8}
+\laboratoryDate{10/25/2024}
+
+\begin{document}
+\maketitle
+
+\section*{Learning Outcomes}
+\begin{itemize}
+    \item Read and interpret a written description of an algorithm
+    \item Correctly implement an algorithm from pseudocode
+    \item Generate test cases for the implementation
+    \item Design and execute benchmarks for an algorithm
+\end{itemize}
+
+% if you want a TOC:
+% \tableofcontents
+
+\newpage
+% if you want to use multicols:
+% \begin{multicols*}{2}
+% \raggedcolumns
+
+\section{Paper Review}
+\begin{enumerate}
+    \item How do scapegoat trees compare with Red-Black, AVL, and splay trees? Why might you prefer to use or not use a scapegoat tree?\\
+
+    \item What does it mean for a node to be weight balanced? What does it mean for a tree to be weight-balanced? Draw some examples and calculate their weight balances.\\
+
+    \item What is the interpretation of the $\alpha$ parameter?\\
+
+    \item What are the conditions for triggering a rebuild of a subtree (during inserts) or the entire tree (during deletes)?\\
+
+\end{enumerate}
+
+\section{Implementation}
+
+
+2. Implement a scapegoat tree that supports insert, size, delete, and contains operations. The tree
+should additionally support a toList() operation that generates a list from an in-order traversal.
+Add a counter variable to keep track of the number of times the rebuild operation is performed.
+You do not need to implement the logarithmic space rebuild algorithm described in 6.1 and 6.2 –
+use the straightforward approach.
+3. Write unit tests that involve the insert, remove, size, contains, and toList() operations.
+4. Benchmark the insert, delete, and contains operations of your implementation on data sets of
+different sizes. Create tables and plots that include both run times and the number of times the
+rebuild operation was performed.
+5. Analyze and interpret the benchmark results to determine if the run time of your implementation
+is consistent with the theoretical analysis.
+
+% \end{multicols*}
+
+% add appendix
+% 7. Attach all your source code and test cases in an appendix.
+
+
+
+\end{document}
