@@ -38,12 +38,41 @@
 \section{Paper Review}
 \begin{enumerate}
     \item How do scapegoat trees compare with Red-Black, AVL, and splay trees? Why might you prefer to use or not use a scapegoat tree?\\
-
+    Scapegoat trees do not maintain a strict balance of the binary tree, instead they will allow imbalances up to a certain threshold $\alpha$. This results in an insertion and deletion of amortized $O(log n)$. They also do not maintain additional information like splay trees. They are generally easier to implement than AVL or Red-Black trees due to not needing a strict ruleset for balancing and complex rotations. The issue is that they can have an expensive worst-case of $O(n)$, and are not quite as adaptive to access patterns. 
     \item What does it mean for a node to be weight balanced? What does it mean for a tree to be weight-balanced? Draw some examples and calculate their weight balances.\\
-
+    A node in a tree is weight-balanced if the sizes of its left and right subtrees are proportional according to the parameter $\alpha$. A tree is weight-balanced if all its nodes satisfy the weight balance condition for the chosen $\alpha$. This ensures that no subtree is disproportionately large compared to its sibling, indirectly controlling the height of the tree. \\
+    Example: \\
+    Balanced Tree ($\alpha = 0.75$) \\
+    \begin{verbatim}
+        1
+       / \
+      2   3
+     / \
+    4   5
+    \end{verbatim}
+    Unbalanced Tree ($\alpha = 0.75$)
+    \begin{verbatim}
+        10
+       /  \
+      5    20
+     / \
+    2   7
+         \
+          8 
+    \end{verbatim}
     \item What is the interpretation of the $\alpha$ parameter?\\
-
+    The $\alpha$ parameter is a balancing threshold that determines how evently distributed the sizes of the subtrees of a node must be to maintain a balanced tree structure. $\alpha$ defines a maximum proportion of the total size of a node's subtree that any single child subtree can have.
     \item What are the conditions for triggering a rebuild of a subtree (during inserts) or the entire tree (during deletes)?\\
+    The conditions for trigger a rebuild of a subtree or the entire tree depend on the violation of the $\alpha$ parameter. For subtree rebuild during inserts, if: \\
+    \[
+    \text{size(left[x])} > \alpha \cdot \text{size(x)} \text{ or } \text{size(right[x])} > \alpha \cdot \text{size(x)}
+    \]
+    Where size(x) is the size of the subtree rooted at x. \\
+    For tree rebuild during deletes, if: \\
+    \[
+    \text{size(T)} < \alpha \cdot \text{max-size(T)}
+    \]
+    Where size(T) is the current number of nodes in the tree and max-size(T) is the largest size the tree has had since its last rebuild.
 
 \end{enumerate}
 
