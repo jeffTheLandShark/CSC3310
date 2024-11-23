@@ -81,6 +81,25 @@
 % Implement a scapegoat tree that supports insert, size, delete, and contains operations. The treeshould additionally support a toList() operation that generates a list from an in-order traversal. Add a counter variable to keep track of the number of times the rebuild operation is performed. You do not need to implement the logarithmic space rebuild algorithm described in 6.1 and 6.2 - use the straightforward approach.
 
 % Write unit tests that involve the insert, remove, size, contains, and toList() operations.
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+    Test & Description & Result \\
+    \hline
+    Test 1 & Test empty tree & Pass \\
+    Test 2 & Test single node insertion & Pass \\
+    Test 3 & Test balanced tree & Pass \\
+    Test 4 & Test multiple insertions & Pass \\
+    Test 5 & Test deletion & Pass \\
+    Test 6 & Test toList() & Pass \\
+    Test 7 & Test reverse order list & Pass \\
+    Test 8 & Test in order list insert with empty list & Pass \\
+    \hline
+    \end{tabular}
+    \caption{Test Results}
+    \label{table:test_results}
+\end{table}
 
 \subsection{Benchmarking}
 % Benchmark the insert, delete, and contains operations of your implementation on data sets of different sizes. Create tables and plots that include both run times and the number of times the rebuild operation was performed.
