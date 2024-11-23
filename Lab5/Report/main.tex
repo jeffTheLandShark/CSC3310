@@ -28,6 +28,7 @@
     \item Correctly implement an algorithm from pseudocode
     \item Generate test cases for the implementation
     \item Design and execute benchmarks for an algorithm
+    \item Repo: \url{https://github.com/jeffTheLandShark/CSC3310/tree/main/Lab5}
 \end{itemize}
 
 % if you want a TOC:
@@ -117,8 +118,6 @@
 \subsection{Benchmarking Analysis}
 % Analyze and interpret the benchmark results to determine if the run time of your implementation is consistent with the theoretical analysis.
 The benchmark results for the scapegoat tree operations are shown in Figure~\ref{fig:benchmark}. These results include the runtime for `insert`, `delete`, and `contains` operations on datasets of varying sizes, as well as the frequency of rebuild operations. We do generally see consistent trends that we would expect of an $O(log \: n)$ runtime for insertion, contains, and deletion, with some fringing on an $O(n)$ runtime which we can expect as a worst-case for any of these depending on the values being input and the amount of times the tree needs to be rebalanced.
-
-\subsection{Test Cases}
 
 % \end{multicols*}
 
