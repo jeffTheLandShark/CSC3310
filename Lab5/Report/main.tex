@@ -5,6 +5,9 @@
 \let\verbatimend\undefined 
 \lstnewenvironment{verbatim}{\lstset{breaklines,basicstyle=\ttfamily}}{}
 \usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{float}
+
 
 \title{Lab 4: Divide and Conquer Algorithms}
 \author{Adam Haile, Aiden Miller, Leigh Goetsch}
@@ -104,8 +107,18 @@
 \subsection{Benchmarking}
 % Benchmark the insert, delete, and contains operations of your implementation on data sets of different sizes. Create tables and plots that include both run times and the number of times the rebuild operation was performed.
 
-\subsection{Analysis}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{benchmarks.png}
+    \caption{Benchmark results for Scapegoat Tree operations}
+    \label{fig:benchmark}
+\end{figure}
+
+\subsection{Benchmarking Analysis}
 % Analyze and interpret the benchmark results to determine if the run time of your implementation is consistent with the theoretical analysis.
+The benchmark results for the scapegoat tree operations are shown in Figure~\ref{fig:benchmark}. These results include the runtime for `insert`, `delete`, and `contains` operations on datasets of varying sizes, as well as the frequency of rebuild operations. We do generally see consistent trends that we would expect of an $O(log \: n)$ runtime for insertion, contains, and deletion, with some fringing on an $O(n)$ runtime which we can expect as a worst-case for any of these depending on the values being input and the amount of times the tree needs to be rebalanced.
+
+\subsection{Test Cases}
 
 % \end{multicols*}
 
