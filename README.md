@@ -6,7 +6,7 @@ This repository contains lab work for the **CSC3310 - Algorithms and Advanced Da
 
 ## Learning Outcomes
 
-This was provided by the course syllabus:
+The following course outcomes were provided by the course syllabus:
 
 - Determine and justify time and space complexity of a variety of algorithms (both recursive and non-recursive)
 - Identify differences between best, expected, and worst-case runtimes
@@ -22,6 +22,7 @@ This was provided by the course syllabus:
 The labs are organized into separate folders, each containing the source code and supporting files for the respective lab assignments:
 
 ```shell
+├── Final/  # Final Project - FFT Algorithm Implementation
 ├── Lab1/   # Benchmarking Insertion and Selection Sort
 ├── Lab2/   # Benchmarking Heaps
 ├── Lab3/   # Iterative Algorithm Design
@@ -31,13 +32,14 @@ The labs are organized into separate folders, each containing the source code an
 
 ### Labs
 
-| Lab                                              | Description                                                                      |
-|--------------------------------------------------|----------------------------------------------------------------------------------|
-| Lab 1: Benchmarking Insertion and Selection Sort | Implementing and benchmarking insertion and selection sort algorithms.           |
-| Lab 2: Benchmarking Heaps                        | Implementing and benchmarking heap data structures.                              |
-| Lab 3: Iterative Algorithm Design                | Implement an iterative algorithm for determining if a point is inside a polygon. |
-| Lab 4: Selection Problem                         | Implement a selection algorithm to find the k-th smallest element in an array.   |
-| Lab 5: Scapegoat Trees                           | Implement a scapegoat tree data structure.                                       |
+| Lab                                              | Description                                                                          |
+|--------------------------------------------------|--------------------------------------------------------------------------------------|
+| Lab 1: Benchmarking Insertion and Selection Sort | Implementing and benchmarking insertion and selection sort algorithms.               |
+| Lab 2: Benchmarking Heaps                        | Implementing and benchmarking heap data structures.                                  |
+| Lab 3: Iterative Algorithm Design                | Implement an iterative algorithm for determining if a point is inside a polygon.     |
+| Lab 4: Selection Problem                         | Implement a selection algorithm to find the k-th smallest element in an array.       |
+| Lab 5: Scapegoat Trees                           | Implement a scapegoat tree data structure.                                           |
+| Final Project: FFT Algorithm Implementation      | Implement the Fast Fourier Transform algorithm and apply it to a real-world problem. |
 
 ## References
 
